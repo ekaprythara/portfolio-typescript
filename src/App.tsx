@@ -3,7 +3,6 @@ import Container from "./layouts/Container";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import ScrollToTop from "./components/ScrollOnTop";
 import Navbar from "./components/Navbar";
 import Wrapper from "./layouts/Wrapper";
 import Home from "./components/Home";
@@ -52,7 +51,6 @@ function App() {
   return (
     <Container>
       <ToastContainer className="right-5 top-20" />
-      <ScrollToTop />
       <Navbar
         isOnTop={isOnTop}
         isDarkMode={isDarkMode}
@@ -60,8 +58,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <Home isOnTop={isOnTop} setSelectedPage={setSelectedPage} />
       <Wrapper>
+        <Home isOnTop={isOnTop} setSelectedPage={setSelectedPage} />
         <About setSelectedPage={setSelectedPage} />
         <Projects setSelectedPage={setSelectedPage} />
         <Contact setSelectedPage={setSelectedPage} />

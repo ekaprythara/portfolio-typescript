@@ -12,15 +12,13 @@ type AboutProps = {
 
 const About = ({ setSelectedPage }: AboutProps) => {
   return (
-    <section
+    <motion.section
       id="about"
-      className="flex flex-col justify-center items-center pt-24"
+      className="mt-10 pt-20 pb-10 px-5"
+      onViewportEnter={() => setSelectedPage(SelectedPage.About)}
     >
-      <Title>About</Title>
-      <motion.div
-        className="text-lg grid grid-cols-none grid-rows-1 lg:grid-cols-[0.8fr_1.2fr] lg:grid-rows-none gap-5 lg:gap-10 items-start mt-10"
-        onViewportEnter={() => setSelectedPage(SelectedPage.About)}
-      >
+      <Title>About Me</Title>
+      <motion.div className="text-lg grid grid-cols-none grid-rows-1 lg:grid-cols-2 lg:grid-rows-none gap-5 lg:gap-10 items-start mt-10">
         <motion.div
           className="flex flex-col justify-center items-center"
           initial="hidden"
@@ -34,15 +32,15 @@ const About = ({ setSelectedPage }: AboutProps) => {
         >
           <PortraitPicture />
         </motion.div>
-        <div className="grid grid-rows-[0.6fr_1.4fr] grid-cols-1 gap-5 h-full text-sm md:text-base lg:text-lg">
+        <div className="flex flex-col justify-start items-start gap-2 text-sm md:text-base lg:text-lg">
           <AboutMe />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 mt-2 w-full">
             <MyTechStack />
             <MyTools />
           </div>
         </div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

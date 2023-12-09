@@ -60,7 +60,7 @@ const ContactForm = () => {
             id="name"
             type="text"
             placeholder="Nama"
-            className="p-3 rounded-md border-[#3bc9db] border w-full ps-12 text-sm"
+            className="p-3 rounded-md border-primary dark:border-color-primary border w-full ps-12 text-sm"
             required
             ref={nameRef}
           />
@@ -74,7 +74,7 @@ const ContactForm = () => {
             id="email"
             type="email"
             placeholder="Email"
-            className="p-3 rounded-md border-[#3bc9db] border w-full ps-12 text-sm"
+            className="p-3 rounded-md border-primary dark:border-color-primary border w-full ps-12 text-sm"
             required
             ref={emailRef}
           />
@@ -88,7 +88,7 @@ const ContactForm = () => {
             cols={30}
             rows={10}
             placeholder="Pesan"
-            className="p-3 rounded-md border-[#3bc9db] border w-full ps-12 text-sm resize-none"
+            className="p-3 rounded-md border-primary dark:border-color-primary border w-full ps-12 text-sm resize-none"
             required
             ref={messageRef}
           ></textarea>

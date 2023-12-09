@@ -1,26 +1,14 @@
 import { TypeAnimation } from "react-type-animation";
 import Button from "../Button";
 import { motion } from "framer-motion";
+import waving from "../../assets/waving.png";
 
 const ProfileInfo = () => {
   return (
-    <div className="flex flex-col justify-center items-center lg:items-start gap-10">
-      <div className="flex flex-col gap-3">
-        <motion.h1
-          className="font-bold text-xl md:text-2xl lg:text-3xl md:mt-4 ms-[0.10rem]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          Hello, I&apos;m
-        </motion.h1>
+    <div className="flex flex-col justify-start items-center lg:justify-center lg:items-center pt-5 lg:pt-0 gap-10 order-2 lg:order-1">
+      <div className="flex flex-col gap-4">
         <motion.h2
-          className="font-bold text-4xl md:text-5xl lg:text-6xl"
+          className="font-bold text-4xl text-center lg:text-start lg:text-5xl text-color-primary dark:text-light leading-tight"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -30,8 +18,12 @@ const ProfileInfo = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <span className="text-[#3bc9db]">Eka </span>
-          Priyanthara
+          Frontend Web Developer
+          <img
+            src={waving}
+            alt="Waving hand symbol"
+            className="w-[3.2rem] h-[3.2rem] ms-5 lg:inline-block hidden"
+          />
         </motion.h2>
         <motion.div
           initial="hidden"
@@ -44,14 +36,19 @@ const ProfileInfo = () => {
           }}
         >
           <TypeAnimation
-            sequence={["Frontend Web Developer"]}
+            sequence={[
+              "Hi, I'm Eka Priyanthara. A passionate Frontend Web Developer based in Denpasar, Bali.",
+            ]}
+            cursor={false}
             speed={20}
             wrapper="p"
-            className="text-base md:text-lg lg:text-xl ms-1 inline-block"
+            className="text-color-secondary dark:text-slate-300 ms-1 inline-block font-mulish tracking-wide text-center lg:text-start text-base lg:text-lg leading-normal font-medium"
           />
         </motion.div>
-        <motion.div
-          className="mt-2 ms-1"
+
+        <motion.a
+          href="https://drive.google.com/file/d/1sTXvirOHBwLSP-RBGPHMk0qtYMjzJqTs/view?usp=sharing"
+          className="mt-2 ms-1 text-center lg:text-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -61,10 +58,8 @@ const ProfileInfo = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <a href="https://drive.google.com/file/d/1sTXvirOHBwLSP-RBGPHMk0qtYMjzJqTs/view?usp=sharing">
-            <Button title="Unduh CV" />
-          </a>
-        </motion.div>
+          <Button title="Download CV" />
+        </motion.a>
       </div>
     </div>
   );

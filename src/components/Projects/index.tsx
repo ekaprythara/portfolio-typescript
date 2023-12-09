@@ -13,7 +13,7 @@ const Projects = ({ setSelectedPage }: ProjectsProps) => {
   return (
     <motion.div
       id="projects"
-      className="flex flex-col justify-center items-center pt-24"
+      className="flex flex-col justify-center items-center mt-10 pt-20 pb-10 px-5"
       onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
     >
       <Title>Projects</Title>

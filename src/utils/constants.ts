@@ -22,8 +22,17 @@ export const PROJECTS: ProjectsType = [
     githubLink: "https://github.com/ekaprythara/portfolio-typescript",
     description:
       "Project portfolio saya yang dibuat dengan menggunakan React & Typescript",
-    techStack: ["HTML", "TailwindCSS", "React", "Typescript"],
+    techStack: ["React", "Tailwind CSS", "Typescript"],
     animationDelay: 0.2,
+  },
+  {
+    title: "Evogym Landing Page",
+    image: evogym,
+    viewLink: "https://evogym-zeta.vercel.app/",
+    githubLink: "https://github.com/ekaprythara/evogym",
+    description: "Project dari YouTube",
+    techStack: ["React", "Tailwind CSS", "Typescript"],
+    animationDelay: 0.3,
   },
   {
     title: "E-Report Logistik",
@@ -31,7 +40,7 @@ export const PROJECTS: ProjectsType = [
     viewLink: "#",
     githubLink: "https://github.com/ekaprythara/e-report",
     description: "Proyek Tugas Akhir II. Saat ini belum di hosting.",
-    techStack: ["HTML", "Bootstrap", "Laravel", "Livewire", "MySQL", "jQuery"],
+    techStack: ["Laravel", "Bootstrap", "jQuery", "MySQL"],
     animationDelay: 0.4,
   },
   {
@@ -40,17 +49,8 @@ export const PROJECTS: ProjectsType = [
     viewLink: "https://random-quote-machine-gold.vercel.app/",
     githubLink: "https://github.com/ekaprythara/random-quote-machine",
     description: "Project dari FreeCodeCamp",
-    techStack: ["HTML", "TailwindCSS", "React"],
-    animationDelay: 0.6,
-  },
-  {
-    title: "Evogym Landing Page",
-    image: evogym,
-    viewLink: "https://evogym-zeta.vercel.app/",
-    githubLink: "https://github.com/ekaprythara/evogym",
-    description: "Project dari YouTube",
-    techStack: ["HTML", "TailwindCSS", "React", "Typescript"],
-    animationDelay: 0.8,
+    techStack: ["React", "Tailwind CSS"],
+    animationDelay: 0.5,
   },
   {
     title: "Drum Machine",
@@ -58,7 +58,7 @@ export const PROJECTS: ProjectsType = [
     viewLink: "https://drum-machine-mu-ecru.vercel.app/",
     githubLink: "https://github.com/ekaprythara/drum-machine",
     description: "Project dari FreeCodeCamp",
-    techStack: ["HTML", "TailwindCSS", "React"],
-    animationDelay: 1,
+    techStack: ["React", "Tailwind CSS"],
+    animationDelay: 0.6,
   },
 ];

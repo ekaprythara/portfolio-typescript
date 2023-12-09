@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 
@@ -21,21 +20,9 @@ const ProjectItem = ({
   techStack,
   animationDelay,
 }: ProjectItemProps) => {
-  const [onMouseOver, setOnMouseOver] = useState(false);
-
-  const onHoverHandler = () => {
-    setOnMouseOver(true);
-  };
-
-  const onLeaveHandler = () => {
-    setOnMouseOver(false);
-  };
-
   return (
     <motion.div
       className="max-w-[450px] h-auto rounded-md p-2"
-      onMouseOver={onHoverHandler}
-      onMouseLeave={onLeaveHandler}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
@@ -45,24 +32,22 @@ const ProjectItem = ({
         visible: { opacity: 1, y: 0 },
       }}
     >
-      <div className="p-8 rounded-3xl bg-slate-200 dark:bg-dark">
+      <div className="p-8 w-full rounded-3xl bg-white shadow-md shadow-secondary dark:shadow-none dark:bg-dark">
         <img
           src={image}
           alt={title}
           width={2360}
           height={1640}
-          className={`rounded-lg object-fill bg-cover transition-all ${
-            onMouseOver && "scale-105 duration-300"
-          }`}
+          className="rounded-xl object-fill bg-cover transition-all ease-in-out duration-500 border border-slate-100 dark:border-color-primary hover:scale-110"
         />
       </div>
-      <div className="p-2">
+      <div className="px-2">
         <div className="flex items-center justify-between gap-3 mt-7">
           <a
             href={viewLink}
             target="_blank"
             rel="noreferrer"
-            className="font-bold text-xs md:text-sm lg:text-base block hover:text-[#3BC9DB] w-fit"
+            className="font-poppins font-bold text-lg uppercase block hover:text-primary duration-300 w-fit"
           >
             {title}
           </a>
@@ -70,25 +55,27 @@ const ProjectItem = ({
             href={githubLink}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-[#3BC9DB] block md:hidden"
+            className="hover:text-primary duration-500 block md:hidden"
           >
-            <BsGithub size={25} />
+            <BsGithub size={30} />
           </a>
           <a
             href={githubLink}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-[#3BC9DB] hidden md:block"
+            className="hover:text-primary duration-500 hidden md:block"
           >
-            <BsGithub size={30} />
+            <BsGithub size={35} />
           </a>
         </div>
-        <p className="text-xs md:text-sm lg:text-base mt-5">{description}</p>
+        <p className="font-mulish tracking-wide font-medium text-base mt-5">
+          {description}
+        </p>
         <ul className="flex flex-wrap mt-5 gap-2">
           {techStack.map((item, index) => (
             <li
               key={index}
-              className="rounded-md py-2 px-4 text-sm bg-slate-200 dark:bg-dark text-center"
+              className="rounded-md py-2 px-4 text-sm lg:text-base font-mulish font-medium tracking-wide bg-white shadow-md shadow-secondary dark:shadow-none dark:bg-dark text-center"
             >
               {item}
             </li>

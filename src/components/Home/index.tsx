@@ -16,7 +16,7 @@ const Home = ({ isOnTop, setSelectedPage }: HomeProps) => {
       onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
     >
       <div
-        className={`grid grid-rows-[0.8fr_1.2fr] grid-cols-1 lg:grid-rows-1 lg:grid-cols-[1.2fr_0.8fr] w-full h-full ${
+        className={`grid grid-rows-[0.7fr_1.3fr] grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 w-full h-full ${
           isOnTop ? "pt-20" : "pt-16"
         }`}
       >

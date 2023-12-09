@@ -8,7 +8,7 @@ type TitleProps = {
 const Title = ({ children }: TitleProps) => {
   return (
     <motion.h1
-      className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary"
+      className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-primary uppercase"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}

@@ -15,22 +15,18 @@ const MyTools = () => {
         visible: { opacity: 1, y: 0 },
       }}
     >
-      <h2 className="text-xs md:text-sm lg:text-base text-primary">Tools</h2>
-      <div className="flex flex-row flex-wrap gap-2 md:gap-3">
-        <div className="bg-slate-200 dark:bg-dark p-3 rounded-lg flex items-center justify-center text-[#0078d7]  transition-colors duration-500">
-          <SiVisualstudiocode
-            size={38}
-            className="w-[30px] h-[30px] md:w-auto md:h-auto"
-          />
+      <h2 className="text-lg text-color-primary text-center lg:text-start font-poppins font-bold">
+        Tools
+      </h2>
+      <div className="flex flex-row flex-wrap justify-center items-center lg:justify-start gap-2 md:gap-3">
+        <div className="bg-color-primary p-2 rounded-xl text-[#0078D7]">
+          <SiVisualstudiocode size={40} />
         </div>
-        <div className="bg-slate-200 dark:bg-dark p-3 rounded-lg flex items-center justify-center text-[#f34f29]  transition-colors duration-500">
-          <BsGit size={40} className="w-[30px] h-[30px] md:w-auto md:h-auto" />
+        <div className="bg-color-primary p-2 rounded-xl text-[#F34F29]">
+          <BsGit size={40} />
         </div>
-        <div className="bg-slate-200 dark:bg-dark p-3 rounded-lg flex items-center justify-center text-[#ffffff]  transition-colors duration-500">
-          <BsGithub
-            size={40}
-            className="w-[30px] h-[30px] md:w-auto md:h-auto text-black dark:text-white"
-          />
+        <div className="bg-color-primary p-2 rounded-xl text-[#FFFFFF]">
+          <BsGithub size={40} />
         </div>
       </div>
     </motion.div>
