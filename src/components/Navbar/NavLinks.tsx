@@ -21,21 +21,25 @@ const NavLinks = ({
           page="Home"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
+          ariaLabel="Home Page"
         />
         <Link
           page="About"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
+          ariaLabel="Home Page"
         />
         <Link
           page="Projects"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
+          ariaLabel="Home Page"
         />
         <Link
           page="Contact"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
+          ariaLabel="Home Page"
         />
       </ul>
       {/* Small Screen Size */}
@@ -56,21 +60,25 @@ const NavLinks = ({
             page="Home"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
+            ariaLabel="Home Page"
           />
           <Link
             page="About"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
+            ariaLabel="Home Page"
           />
           <Link
             page="Projects"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
+            ariaLabel="Home Page"
           />
           <Link
             page="Contact"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
+            ariaLabel="Home Page"
           />
         </ul>
       </div>

@@ -35,15 +35,15 @@ const Navbar = ({
     >
       <div className="grid grid-cols-3 lg:grid-cols-[0.8fr_1.4fr_0.8fr] grid-rows-1 px-5 md:px-10 lg:px-20 h-full w-full">
         <div className="flex justify-start items-center order-1">
-          <h1 className="text-xl font-bold hidden md:block">
-            <span className="text-primary">Eka </span>Priyanthara
-          </h1>
+          <h1 className="text-xl font-bold hidden md:block">Eka Priyanthara</h1>
           <h1 className="block md:hidden text-3xl font-bold">
             <span className="text-primary">E</span>P
           </h1>
         </div>
-        <div className="flex justify-end items-center order-3 lg:hidden">
-          <Hamburger toggled={isOpen} toggle={setIsOpen} size={25} />
+        <div className="flex justify-end items-center h-full order-3 lg:hidden ms-auto">
+          <button className="w-fit" aria-label="Navigation Menu">
+            <Hamburger toggled={isOpen} toggle={setIsOpen} size={25} />
+          </button>
         </div>
         <div className="flex justify-center items-center order-3 lg:order-2">
           <NavLinks

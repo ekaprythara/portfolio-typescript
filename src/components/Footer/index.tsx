@@ -1,4 +1,4 @@
-import { BsGithub, BsTwitterX } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -10,6 +10,9 @@ const Footer = () => {
         <div className="flex gap-3 order-1 md:order-2">
           <a href="https://www.twitter.com/ekaprythara" target="_blank">
             <BsTwitterX size={25} className="hover:text-primary duration-500" />
+          </a>
+          <a href="https://www.linkedin.com/in/ekaprythara" target="_blank">
+            <BsLinkedin size={25} className="hover:text-primary duration-500" />
           </a>
           <a href="https://www.github.com/ekaprythara" target="_blank">
             <BsGithub size={25} className="hover:text-primary duration-500" />
