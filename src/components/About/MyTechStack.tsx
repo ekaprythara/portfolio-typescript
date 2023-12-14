@@ -21,7 +21,7 @@ const MyTechStack = () => {
         visible: { opacity: 1, y: 0 },
       }}
     >
-      <h2 className="text-lg text-color-primary text-center lg:text-start font-poppins font-bold">
+      <h2 className="text-lg dark:text-white text-color-primary text-center lg:text-start font-poppins font-bold">
         Tech Stack
       </h2>
       <div className="flex flex-row flex-wrap justify-center items-center lg:justify-start gap-2 md:gap-3">
