@@ -37,9 +37,10 @@ export const PROJECTS: ProjectsType = [
   {
     title: "E-Report Logistik",
     image: eReportLogistik,
-    viewLink: "#",
+    viewLink: "https://ekapriyanthara-logistik-bpbd.000webhostapp.com/",
     githubLink: "https://github.com/ekaprythara/e-report",
-    description: "Proyek Tugas Akhir II. Saat ini belum di hosting.",
+    description:
+      "Proyek Tugas Akhir II. Login dengan menggunakan uname: 'swanjaya', 'ekasaputra', 'ekapriyanthara', dan passwd: 'password'.",
     techStack: ["Laravel", "Bootstrap", "jQuery", "MySQL"],
     animationDelay: 0.4,
   },
