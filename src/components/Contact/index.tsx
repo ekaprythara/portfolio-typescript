@@ -32,7 +32,7 @@ const Contact = ({ setSelectedPage }: ContactProps) => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-color-primary dark:text-white font-poppins font-bold">
               Feel free to contact me!
             </h2>
-            <div className="mt-10 w-fit flex flex-col gap-5 justify-start items-start">
+            <div className="mt-10 flex flex-col gap-5 justify-start items-start">
               <div className="grid grid-cols-[0.5fr_1.5fr] grid-rows-1 gap-5">
                 <div className="flex justify-center items-center">
                   <TbMapSearch size={30} className="text-primary" />

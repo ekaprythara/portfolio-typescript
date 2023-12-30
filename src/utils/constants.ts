@@ -3,6 +3,7 @@ import randomQuoteMachine from "../assets/thumbnail/random-quote-machine.png";
 import drumMachine from "../assets/thumbnail/drum-machine.png";
 import evogym from "../assets/thumbnail/evogym.png";
 import portfolio from "../assets/thumbnail/portfolio.png";
+import carhub from "../assets/thumbnail/carhub.png";
 
 type ProjectsType = {
   title: string;
@@ -42,6 +43,15 @@ export const PROJECTS: ProjectsType = [
     description:
       "Proyek Tugas Akhir II. Login dengan menggunakan uname: 'swanjaya', 'ekasaputra', 'ekapriyanthara', dan passwd: 'password'.",
     techStack: ["Laravel", "Bootstrap", "jQuery", "MySQL"],
+    animationDelay: 0.4,
+  },
+  {
+    title: "CarHub",
+    image: carhub,
+    viewLink: "https://carhub-plum.vercel.app/",
+    githubLink: "https://github.com/ekaprythara/carhub",
+    description: "Find, book, and rent a car - quickly and easily.",
+    techStack: ["React", "Tailwind CSS", "Next.js"],
     animationDelay: 0.4,
   },
   {
