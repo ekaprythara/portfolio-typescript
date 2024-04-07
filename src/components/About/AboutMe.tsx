@@ -27,8 +27,8 @@ const AboutMe = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        Saya merupakan fresh graduate dari Institut Teknologi dan Bisnis STIKOM
-        Bali dengan jurusan Sistem Komputer. Memiliki minat lebih di bidang
+        Saya merupakan lulusan dari Institut Teknologi dan Bisnis STIKOM Bali
+        dengan jurusan Sistem Komputer. Memiliki minat lebih di bidang
         pemrograman web, sehingga mampu membuat sistem informasi sebagai salah
         satu tugas akhir di kuliah. Saya merupakan pribadi yang senang
         mengeksplorasi hal baru, termasuk mengasah kemampuan di bidang
