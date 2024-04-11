@@ -47,7 +47,7 @@ const ProfileInfo = () => {
         </motion.div>
 
         <motion.a
-          href="https://drive.google.com/file/d/14_-YhL2i3twFKFRK-rwVmeutJ0NRW0Cg/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FDZtwp6iWWBe7Cr3JhcFUwYVI5BxAyNk/view?usp=sharing"
           className="mt-2 ms-1 text-center lg:text-start"
           initial="hidden"
           whileInView="visible"

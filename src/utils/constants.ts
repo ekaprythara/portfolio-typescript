@@ -19,7 +19,7 @@ export const PROJECTS: ProjectsType = [
   {
     title: "Portfolio",
     image: portfolio,
-    viewLink: "#",
+    viewLink: "https://ekapriyanthara.online",
     githubLink: "https://github.com/ekaprythara/portfolio-typescript",
     description:
       "Project portfolio saya yang dibuat dengan menggunakan React & Typescript",
