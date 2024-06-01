@@ -37,7 +37,7 @@ const ProfileInfo = () => {
         >
           <TypeAnimation
             sequence={[
-              "Hi, I'm Eka Priyanthara. A passionate Frontend Web Developer based in Denpasar, Bali.",
+              "Hi, I'm Eka Priyanthara. A passionate Web Developer based in Denpasar, Bali.",
             ]}
             cursor={false}
             speed={20}
@@ -47,7 +47,8 @@ const ProfileInfo = () => {
         </motion.div>
 
         <motion.a
-          href="https://drive.google.com/file/d/1FDZtwp6iWWBe7Cr3JhcFUwYVI5BxAyNk/view?usp=sharing"
+          href="https://drive.google.com/file/d/1xwd04GKmGQeD-EsU_w7ZfeXv1LH0nlXY/view?usp=sharing"
+          target="_blank"
           className="mt-2 ms-1 text-center lg:text-start"
           initial="hidden"
           whileInView="visible"

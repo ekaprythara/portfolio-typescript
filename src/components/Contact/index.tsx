@@ -33,7 +33,7 @@ const Contact = ({ setSelectedPage }: ContactProps) => {
               Feel free to contact me!
             </h2>
             <div className="mt-10 flex flex-col gap-5 justify-start items-start">
-              <div className="grid grid-cols-[0.5fr_1.5fr] grid-rows-1 gap-5">
+              <div className="grid grid-cols-[0.2fr_1.8fr] grid-rows-1 gap-5">
                 <div className="flex justify-center items-center">
                   <TbMapSearch size={30} className="text-primary" />
                 </div>
@@ -48,7 +48,7 @@ const Contact = ({ setSelectedPage }: ContactProps) => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-[0.5fr_1.5fr] grid-rows-1 gap-5">
+              <div className="grid grid-cols-[0.2fr_1.8fr] grid-rows-1 gap-5">
                 <div className="flex justify-center items-center">
                   <TbMail size={30} className="text-primary" />
                 </div>

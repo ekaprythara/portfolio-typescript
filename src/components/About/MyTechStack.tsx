@@ -2,7 +2,8 @@ import {
   SiCss3,
   SiHtml5,
   SiJavascript,
-  SiNextdotjs,
+  SiLaravel,
+  SiMysql,
   SiReact,
   SiSass,
   SiTailwindcss,
@@ -35,7 +36,7 @@ const MyTechStack = () => {
         <div className="bg-[#CC6699] p-2 rounded-xl text-white">
           <SiSass size={40} />
         </div>
-        <div className="bg-color-primary p-2 rounded-xl text-[#3490DC]">
+        <div className="bg-white shadow-md p-2 rounded-xl text-[#3490DC]">
           <SiTailwindcss size={40} />
         </div>
         <div>
@@ -47,8 +48,11 @@ const MyTechStack = () => {
         <div className="bg-color-primary p-2 rounded-xl text-[#61DAFB]">
           <SiReact size={40} />
         </div>
-        <div className="bg-color-primary p-2 rounded-xl text-[#FFFFFF]">
-          <SiNextdotjs size={40} />
+        <div className="bg-white shadow-md p-2 rounded-xl text-[#f55247]">
+          <SiLaravel size={40} />
+        </div>
+        <div className="bg-color-primary p-2 rounded-xl text-[#61DAFB]">
+          <SiMysql size={40} />
         </div>
       </div>
     </motion.div>
