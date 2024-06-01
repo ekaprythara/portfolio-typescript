@@ -41,8 +41,8 @@ const Contact = ({ setSelectedPage }: ContactProps) => {
                   <div className="font-poppins font-bold text-base">
                     Location
                   </div>
-                  <div className="font-mulish tracking-wide font-medium text-base dark:text-white text-color-secondary">
-                    <span className="cursor-pointer hover:text-primary duration-500">
+                  <div className="font-mulish tracking-wide font-medium dark:text-white text-color-secondary">
+                    <span className="cursor-pointer text-sm lg:text-base hover:text-primary duration-500">
                       Denpasar, Bali
                     </span>
                   </div>
@@ -54,10 +54,10 @@ const Contact = ({ setSelectedPage }: ContactProps) => {
                 </div>
                 <div className="grid grid-rows-2 grid-cols-none">
                   <div className="font-poppins font-bold text-base">Email</div>
-                  <div className="font-mulish tracking-wide font-medium text-base dark:text-white text-color-secondary">
+                  <div className="font-mulish tracking-wide font-medium dark:text-white text-color-secondary">
                     <a
                       href="mailto:ekapriyanthara@gmail.com"
-                      className="cursor-pointer hover:text-primary duration-500"
+                      className="cursor-pointer text-sm lg:text-base hover:text-primary duration-500"
                     >
                       ekapriyanthara@gmail.com
                     </a>
