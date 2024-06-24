@@ -3,7 +3,6 @@ import randomQuoteMachine from "../assets/thumbnail/random-quote-machine.png";
 import drumMachine from "../assets/thumbnail/drum-machine.png";
 import evogym from "../assets/thumbnail/evogym.png";
 import portfolio from "../assets/thumbnail/portfolio.png";
-import carhub from "../assets/thumbnail/carhub.png";
 import ppkri from "../assets/thumbnail/ppkri.png";
 
 type ProjectsType = {
