@@ -18,7 +18,7 @@ const ProfileInfo = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          Frontend Web Developer
+          Web Developer
           <img
             src={waving}
             alt="Waving hand symbol"
